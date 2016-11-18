@@ -1,5 +1,7 @@
 #!/bin/sh
-ps -o pid >test1.txt
-echo "PID's of running processes are stored in test1.txt"
+echo "enter the name of the file to store PID's of running processes-"
+read name
+ps -o pid > $name
+echo "PID's of running processes are stored in $name"
 
 

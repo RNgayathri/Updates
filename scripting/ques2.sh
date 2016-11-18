@@ -7,5 +7,8 @@ if [ -f ${args[0]} ]; then
 	rm ${args[0]}
 		else 
  	        echo "Doesn't exist and archived the given directory"
-	        tar -cf archived2.tar ${args[2]}
+ 	        echo "enter the name of the archive file to create-"
+ 	        read name
+ 	        cd ..
+	        tar -cf $name ${args[1]}
 fi
