@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/sh
 clear
 mkdir timestamp
 cd /tmp
