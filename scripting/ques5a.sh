@@ -14,7 +14,7 @@ do
 j=$(sed -n "${k}p" dl.txt)
 if [ $l -gt $j ];
 then
-tar cf $DATE/$j.tar $j
+tar cf $Date/$j.tar $j
 fi
 done
 
