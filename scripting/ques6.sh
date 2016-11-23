@@ -20,11 +20,8 @@ rm -i "${c1}"
 fi
 fi
 done
-c=$(pwd)
-echo $c
-#sed -e "s/\.txt/Razorthink_/g" test6.txt
-rename  's/\*.txt/Razorthink_'${c}'/' *
-
-
-
-
+pwd >t1.txt
+te=$(sed "s/\//-/g" t1.txt)
+rename 's/txt//g' *.*
+mv "txt" "R_${te}"
+ls
