@@ -22,6 +22,6 @@ fi
 done
 pwd >t1.txt
 te=$(sed "s/\//-/g" t1.txt)
-rename 's/txt//g' *.*
-mv "txt" "R_${te}"
+rename 's/'${args[1]}'//g' *.*
+mv "${args[1]}" "R_${te}"
 ls
